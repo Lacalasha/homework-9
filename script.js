@@ -1,12 +1,16 @@
 "use strict";
+const mainTitle = document.getElementById("mainTitle");
+const helloButton = document.getElementById("helloButton");
+const byeButton = document.getElementById("byeButton");
+
 function changeText(akRasacMindaImasDavwerMindia) {
-  document.getElementById("mainTitle").innerHTML = akRasacMindaImasDavwerMindia;
+  mainTitle.innerHTML = akRasacMindaImasDavwerMindia;
 }
 
-document.getElementById("helloButton").addEventListener("click", function () {
+helloButton.addEventListener("click", function () {
   changeText("Mobrdzandi gienacvale");
 });
 
-document.getElementById("byeButton").addEventListener("click", function () {
+byeButton.addEventListener("click", function () {
   changeText("Naxvamdis Genacvale");
 });
